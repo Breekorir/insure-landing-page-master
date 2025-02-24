@@ -1,0 +1,87 @@
+/*css resets*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+    --Grayish-Blue: hsl(216, 30%, 68%);
+    --Very-Dark-Violet: hsl(270, 9%, 17%);
+    --Dark-violet:hsl(256, 26%,20%);
+    --section-padding:18px 60px;
+}
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*utility classes*/
+
+.action-link{
+    border: 1px solid var(--Dark-Grayish-Violet);
+    color: var(--Dark-Grayish-Violet);
+    padding: 8px 16px;
+}
+header,section,footer{
+    padding: var(--section-padding);
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a{
+    margin: 0px 12px;
+    text-transform: uppercase;
+    color: var(--Dark-Grayish-Violet);
+}
+body{
+    font-family: "karla", serif;
+}
+h1,h2,h3,h4{
+    font-family: "DM Serif Display";
+}
+
+header .action-link{
+    border-color: var(--Very-Dark-Violet);
+    color: var(--Very-Dark-Violet);
+}
+
+
+/*hero-section*/
+.hero{
+    display:flex;
+    background-color: var(--Dark-violet);
+    color:lightgray;
+    align-items: center;
+}
+.hero .text-side{
+    padding-right: 30px;
+    flex: 1;
+}
+.hero .text-side h1{
+    font-size: 55px;
+}
+.hero .image-side{
+    flex:1;
+}
+.hero .text-side p{
+    font-size: 20px;
+}
+
+.hero .action-link{
+    background-color: inherit;
+    color: inherit;
+    display: inline-block;
+    margin-top: 30px;
+}
+
